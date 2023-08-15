@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,50,0.8), rgba(0,0,50,0.8)), url(459-background.png); /* Your background image URL */
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-box {
+    width: 75%;
+    max-width: 350px;
+    background: #fff;
+    padding: 20px 30px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.form-box h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #3c00a0;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-field {
+    background: #a3a3a3bf;
+    display: flex;
+    align-items: center;
+    border-radius: 3px;
+    padding: 15px;
+    max-height: 65px;
+    transition: max-height 0.5s, padding 0.5s; /* Add padding transition */
+    overflow: hidden;
+    margin-bottom: 10px;
+
+}
+.input-field input {
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 10px;
+    transition: max-height 0.5s, padding 0.5s;
+}
+
+.input-field i {
+    margin-right: 10px;
+    color: #999999;
+}
+
+/* Apply styles for placeholder text */
+.input-field input::placeholder {
+    color: #282121;
+    font-size: 14px;
+}
+ form p{
+    text-align: left;
+    font-size: 13px;
+}
+form p a{
+    text-decoration: none;
+    color: #3c00a0;
+}
+.btn-field{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px; 
+}
+.btn-field button{
+    flex-basis: 48%;
+    background: #3c00a0;
+    color: white;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: background 1s;
+    padding: 10px;
+}
+.input-field{
+    height: 60px;
+}
+.btn-field button.disable{
+    background: #eaeaea;
+    color: #555;
+}
+
+
+
+
+

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in sign up form for registration</title>
+    <link rel="stylesheet" href="style1.css">
+    <script src="https://kit.fontawesome.com/82b78138cc.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="form-box">
+            <h1 id="title">Sign Up</h1>
+            <form>
+                <div class="input-group">
+                    <div class="input-field" id="Namefield">
+                        <i class="fa-regular fa-user"></i>
+                        <input type="text" placeholder="Enter your name">
+                    </div>
+                </div>
+                <div class="input-group">
+                    <div class="input-field">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" placeholder="Enter personal email">
+                    </div>
+                </div>
+                <div class="input-group">
+                    <div class="input-field">
+                        <i class="fa-solid fa-key"></i>
+                        <input type="password" placeholder="Enter your password">
+                    </div>
+                </div>
+                <p>Lost password <a href="#">Click Here!</a></p>
+                <div class="btn-field">
+                    <button type="button" id="signupbtn"> Sign Up</button>
+                    <button type="button" id="signinbtn" class="disable"> Sign in</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+        let signupbtn = document.getElementById("signupbtn");
+        let signinbtn = document.getElementById("signinbtn");
+        let Namefield = document.getElementById("Namefield");
+        let title = document.getElementById("title");
+
+        signinbtn.onclick = function() {
+        Namefield.style.maxHeight = "0";
+        Namefield.style.padding = "0";
+        document.getElementById("Namefield").style.display = "none";
+        title.innerText = "Sign In";
+        signupbtn.classList.add("disable");
+        signinbtn.classList.remove("disable");
+}
+    signupbtn.onclick = function() {
+    Namefield.style.maxHeight = "65px"; // Adjust the value if needed
+    Namefield.style.padding = "15px"; // Adjust the padding value
+    Namefield.style.display = "flex"; // Show the field
+    title.innerText = "Sign Up";
+    signupbtn.classList.remove("disable");
+    signinbtn.classList.add("disable");
+    
+    // Reset the styles of the input field
+    Namefield.querySelector("input").style.maxHeight = "initial";
+    Namefield.querySelector("input").style.padding = "10px";
+}
+    </script>
+</body>
+</html>
